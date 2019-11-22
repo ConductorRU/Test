@@ -1,0 +1,60 @@
+.wgImage {}
+.wgImage > div {vertical-align: top;display: inline-block;border: 1px solid #ccc;}
+.wgImage .wgItem {position:relative;font-size:48px;line-height:100px;overflow:hidden;width:100px;height:100px;max-width:100%;margin:5px;border:2px dashed #ccc;border-radius:2px;color:#ccc;text-align:center;  background: transparent center center no-repeat;background-size: cover;}
+.wgItem input[type="file"] { display: block;cursor: pointer;position: absolute;top: 0;left: 0;right: 0;bottom: 0;z-index: 10;opacity: 0;width: 100%;height:100%;font-size: 0; margin: 0;padding: 0;}
+.wgImage.isError {color: #721c24;background-color: #f8d7da;}
+.wgItem .bar {display:none;position:absolute;left:0;right:0;bottom:0;height:15px;z-index: 5; background:#ccc;}
+.wgItem .remove {position: absolute;display:none;text-align:center;font-size: 20px;top: 0;right: 0;line-height: 36px;width: 36px;height: 36px;z-index: 30;cursor: pointer;color: #888;background: rgba(0, 0, 0, 0.2);transition:ease all 300ms;}
+.wgItem .remove:hover { color: #8e160a;background: #e74c3c;}
+.wgItem.isLoad, .wgItem.isLoaded { border: 1px solid #eee;}
+.wgItem.isLoad .bar {display:block;}
+.wgItem.isLoaded > i {display:none;}
+.wgItem.isLoaded i.remove {display:block;}
+.wgItem .bar > i {display:block;height:100%;background: #5cb85c;background: repeating-linear-gradient(135deg,#288228, #288228 5px, #5cb85c 0, #5cb85c 10px);width:0%;}
+
+.wgFile .view, .wgFile .load, .wgFile .error {display:none;}
+.wgFile .sel {display:inline-block;overflow: hidden;position: relative;}
+.wgFile .wgItem.isLoad .sel, .wgFile .wgItem.isLoaded .sel {display:none;}
+.wgFile .wgItem.isLoad .load {display:block;}
+.wgFile .wgItem.isLoaded .view {display:block;}
+.wgFile .wgItem.isError .error {display:block;}
+.wgFile .wgItem .bar {display:block; overflow: hidden;position:relative;height:34px;z-index: 5; background:#ddd;border-radius:4px;}
+.wgFile .wgItem .bar span {position:absolute;z-index:10;top:0;left:0;right:0;bottom:0;color:#fff;font-weight:bold;font-size:22px;line-height:34px;text-align:center;}
+
+.wgFile .wgItem .view {position:relative;}
+.wgFile .wgItem .view > div:first-child {margin-right:120px;}
+.wgFile .wgItem .view > div:last-child {position:absolute;top:0;right:0;float:right;width:120px;}
+.wgItem .remove {display:inline-block;width:auto;padding:0 10px;}
+
+
+
+.fileUpload {padding:10px;}
+.fileUpload > div.upload {width:auto;height:100px;padding:5px;text-align:center;border:4px dashed #ddd;color:#bbb;font-size:20px;position: relative;}
+.fileUpload > div.upload.dragOver {border-color:#337ab7;}
+.fileUpload > div.upload > div {padding:7px 0;}
+.fileUpload > div.upload > span {display:block;font-size:12px;}
+
+.fileUpLine {position: relative; padding: 15px 5px; border-bottom: 1px dotted #ddd;}
+.fileUpLine.select:hover {cursor:pointer;background-color:#eee;}
+.fileUpLine a {font-weight: bold; font-size: 14px;}
+.fileUpLine .fileSize {font-size: 14px; color: #bbb;}
+.fileUpLine .fileX {cursor: pointer; position: absolute; top: 18px; right: 5px; font-size: 24px; color: #bbb;}
+.fileUpLine .fileX:hover {color:#e31e24;}
+.fileHover {display:none;position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff; opacity: 0.85;}
+.fileHover.hover {display:block;}
+.fileHover {text-align: center; font-size: 14px; padding: 15px;}
+.fileHover .href {cursor:pointer;font-size: 12px;color:#337ab7;}
+.fileHover .href:hover {color:#e31e24;}
+.fileUpload .progress {margin: 10px 0;}
+.fileOrphan {display:none; padding: 27px 0 17px; color: #bbb; font-size: 14px; text-align: center;}
+.fileOrphan:only-child {display:block;}
+#attach-file .modal-dialog {margin: 60px auto;}
+.owl-theme .owl-controls { position: relative; top: -50px; margin-right: 50px; top: -35px; margin-left: 5px; margin-right: 50px;}
+.owl-theme .owl-controls .owl-page span { width: 10px; height: 10px;margin:5px; background: #fff; border: 1px solid #aaa;}
+
+.uploads .upload {display:inline-block;width:auto;position: relative;}
+
+.fileUpLine {margin-bottom: 15px; cursor: pointer;}
+.form-group .fileUpLine > input {margin: 0; display: inline-block; width: 80%;background: #ddd;}
+.fileUpLine > a {margin: 0; display: inline-block; width: 10%;text-align:center;}
+.fileUpLine > span {margin: 0; display: inline-block; width: 5%;font-size: 20px;text-align:right;}
