@@ -1,0 +1,96 @@
+#genplan {overflow:hidden;}
+#genplan h2, #plans h2, #timeline h2 {font-size: 24px;color: #333333;padding:30px 0;}
+#plans h2 {padding:50px 0 30px;}
+#genplan .genmap {position:relative;}
+#genplan .genmap .plans {position:relative;}
+#genplan .genmap .pHouses .img {position: absolute;left: 0;right: 0;top: 0;bottom: 0;width:100%;}
+#genplan .genmap .pHouses, #genplan .genmap .pFloors, #genplan .genmap .pPlan, #genplan .genmap .plan, #genplan .genmap .plan object {width:100%;height:100%;background:#fff;position:absolute;top:0;left:0;right:0;bottom:0;}
+#genplan .genmap .pHouses {z-index:20;}
+#genplan .genmap .pFloors {z-index:10;}
+#genplan .genmap .pFloors .btns > .container {padding-right:0;}
+#genplan .genmap .pPlan {	background: #fff;}
+#genplan .genmap .pPlan {height:100%;text-align:center;padding:0 100px;}
+#genplan .genmap .pPlan .container {position:relative;}
+#genplan .genmap .pPlan h2 {height:17%;color:#333333;}
+#genplan .genmap .pPlan .back {color:#333333;cursor:pointer;position:absolute;top:0;left:0;font-size:14px;	padding: 35px 0;}
+#genplan .genmap .pPlan .back i {font-size:16px;vertical-align: baseline;margin-right:5px;}
+#genplan .genmap .pPlan .back:hover {text-decoration:underline;}
+#genplan .genmap .pPlan .img {position:relative;}
+#genplan .genmap .pPlan .params {height:23%;padding-right:50px;}
+#genplan .genmap .pPlan .params .but {border:none;border-radius:0;height:auto;line-height:130%;background:transparent;border-bottom:1px dashed #333;color:#333;margin:10px;width:auto;padding:0;}
+#genplan .genmap .pPlan .params .but:hover {opacity:0.8;}
+#genplan .genmap .pPlan .params .but.active {border-color:#86B42C;color:#86B42C;opacity:1;}
+#genplan .genmap .pPlan .params .but:hover {border-color:transparent;}
+
+#genplan .pHouses a {cursor:pointer;transition:ease opacity 300ms;position:absolute;display:block;text-align:center;}
+#genplan .pHouses a.but {position:relative;float:right;}
+#genplan .genmap .pFloors .btns {	z-index: 100;position: absolute;left:0;right:0;top: 0;padding:10px 0;color: #fff;line-height: 30px;background: rgba(0, 0, 0, 0.5);}
+#genplan .genmap .pFloors .bTitle {padding-left:10px;}
+#genplan .genmap .pHouses > div.buts {position:absolute;z-index:100;left:0;right:0;top:0;	background: rgba(0, 0, 0, 0.5);}
+#genplan .genmap .pHouses > div.buts .down {padding: 20px 0;}
+#genplan .but {display:inline-block;width:100%;max-width:210px;height:30px;line-height:30px;font-size:16px;border-radius: 15px;}
+#genplan .but > img {margin-top:4px;margin-left:5px;}
+#genplan .but i {line-height: 28px;font-size: 22px;padding-right: 10px;}
+#genplan .but.butHouse {width: auto;padding: 0 20px;}
+#genplan .builds {position:absolute;z-index:101;top:0;left:0;right:0;bottom:0;}
+#genplan .planm {padding-right:60px;}
+#genplan .planf {position:absolute;top:15%;bottom:0;right:0;width:60px;}
+#genplan .planf > span {cursor: pointer;width: 50px;border-radius: 50%;height: 50px;line-height: 48px;margin-bottom: 10px;display: block;margin-left: auto;border: 1px solid #86b42c;color: #86b42c;}
+#genplan .planf > span:hover, #genplan .planf > span.active {color:#fff;background:#86b42c;}
+
+
+/*#genplan .builds[data-id="1"] a[data-id="1"] {top:21.80094786729858%;left:21.73611111111111%;width:24.72222222222222%;}
+#genplan .builds[data-id="1"] a[data-id="2"] {top:27.8436018957346%;left:48.88888888888889%;width:25.13888888888889%;}
+#genplan .builds[data-id="1"] a[data-id="3"] {top:41.58767772511848%;left:75%;width:28%;}
+#genplan .builds[data-id="1"] a[data-id="4"] {top:35.78199052132701%;left:1.59722222222222%;width:27.01388888888889%;}
+#genplan .builds[data-id="1"] a[data-id="5"] {top:46.91943127962085%;left:20.90277777777778%;width:25.06944444444444%;}
+
+
+#genplan .builds[data-id="2"] a[data-id="1"] {top:40.28436018957346%;left:40.13888888888889%;width:41.18055555555556%;}
+#genplan .builds[data-id="2"] a[data-id="2"] {top:25.11848341232227%;left:13.26388888888889%;width:31.66666666666667%;}
+#genplan .builds[data-id="2"] a[data-id="3"] {top:12.55924170616114%;left:1.875%;width:26.04166666666667%;}
+#genplan .builds[data-id="2"] a[data-id="4"] {top:32.10900473933649%;left:70.48611111111111%;width:29.51388888888889%;}
+#genplan .builds[data-id="2"] a[data-id="5"] {top:20.02369668246445%;left:53.26388888888889%;width:24.86111111111111%;}*/
+
+#genplan .pHouses a > img {transition:ease opacity 300ms;width:100%;opacity:0.7;}
+#genplan .pHouses a.dis {cursor:default;}
+#genplan .pHouses a.dis > img {opacity:0!important;}
+#genplan .pHouses a > span {transition:ease opacity 300ms;opacity:1;}
+#genplan .pHouses a:hover > img, #genplan .pHouses a:hover > span {opacity:1;}
+
+#genplan .pHouses a > span {position:absolute;z-index:5;left:0;top:-20px;right:0;text-align:center;}
+#genplan .pHouses a > span > span {position:relative;display:inline-block;background: #FFFFFF;font-size: 12px;color: #333333;padding:13px 17px;border-radius:30px;font-weight:400;}
+#genplan .pHouses a > span > span {	font-size: 16px;padding: 13px 23px;}
+#genplan .pHouses a > span > span::before, #genplan .pHouses a > span > span:after { content: '';  position: absolute;left: 40%;left: calc(50% - 10px); bottom: -20px;border: 10px solid transparent;}
+#genplan .pHouses a > span > span::after { border-top: 10px solid white; bottom: -19px; }
+#genplan .pHouses a > span b {font-weight: 500;white-space: nowrap;}
+
+.baloon {position:absolute;z-index:5;text-align:center;pointer-events: none; width: 400px;margin-left: -200px;}
+.baloon * {pointer-events: none;}
+.baloon > div {position:relative;display:inline-block;background: #FFFFFF;font-size: 12px;color: #333333;padding:13px 17px;border-radius:30px;font-weight:400;}
+.baloon > div {font-size: 16px;padding: 13px 23px;}
+.baloon.bottom > div::before, .baloon.bottom > div:after { content: '';  position: absolute;left: 40%;left: calc(50% - 10px); bottom: -20px;border: 10px solid transparent;}
+.baloon.bottom > div::after { border-top: 10px solid white; bottom: -19px; }
+.baloon.top > div::before, .baloon.top > div:after { content: '';  position: absolute;left: 40%;left: calc(50% - 10px); top: -20px;border: 10px solid transparent;}
+.baloon.top > div::after { border-bottom: 10px solid white; top: -19px; }
+.baloon b {font-weight: 500;white-space: nowrap;}
+
+@media (max-width: 993px)
+{
+	.tabs .tabText {font-size:14px;}
+	#catalog .catDetail .info {padding-left: 20px;}
+	#catalog .price {font-size: 21px;}
+	#genplan .genmap .pPlan {padding:0 5px;}
+	#genplan .planf > span {width: 40px;height: 40px;line-height: 38px;}
+	#genplan .planf {right: 15px;}
+}
+@media (max-width: 769px)
+{
+	#genplan .pHouses a > span > span {padding: 8px 12px; font-size: 11px;}
+}
+@media (max-width: 577px)
+{
+	#genplan .but {font-size:12px;max-width: 140px;white-space: nowrap;}
+	#genplan .pHouses a > span {display:none;}	#genplan .pHouses a > span > span {padding: 2px 6px; font-size: 9px;}
+	.baloon {display:none;}
+}
