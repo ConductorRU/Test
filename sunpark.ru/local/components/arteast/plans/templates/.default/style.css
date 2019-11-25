@@ -1,0 +1,52 @@
+#plans h2 {font-size: 24px;color: #333333;padding:50px 0 30px;}
+#plans {position:relative;padding-bottom:30px;}
+#plans .back {position:absolute;top:0;left:0;right:0;bottom:0;}
+#plans .back .row {height:100%;margin:0;}
+#plans .back .gray {height:100%;background: rgba(51, 51, 51, 0.05);}
+#plans .tabText {position:relative;margin:0 -15px;}
+#plans .tabText .item {display:inline-block;padding:15px;}
+#plans .tabText .item > span {transition:ease all 300ms;cursor:pointer;position:relative;display:inline-block;width:100px;height:100px;border: 1px solid rgba(51, 51, 51, 0);}
+#plans .tabText .item > span:before {transition:ease all 300ms;position:absolute;content: " ";top:0;left:0;right:0;bottom:0;background: rgba(51, 51, 51, 0.05);}
+#plans .tabText .item > span:hover:before, #plans .tabText .item > span.active:before {background: rgba(51, 51, 51, 0.1);}
+#plans .tabText .item > span.active {border-color: rgba(51, 51, 51, 0.2);}
+#plans .owl-carousel {display:none;overflow:hidden;}
+#plans .owl-carousel.active {display:block;}
+#plans .owl-carousel .item .img {display:block;height:560px;}
+#plans .owl-carousel .item .row {padding-top:2px;color: #828282;font-size: 16px;font-weight:400;}
+
+#plans .tabs .tab li {transition:ease all 300ms;border-radius: 15px;font-size: 16px;color: #828282;text-align:center;margin:0 10px;cursor:pointer;display:inline-block;min-width:120px;height:30px;line-height:30px;border: 1px solid rgba(51, 51, 51, 0);box-sizing: border-box;font-weight:400;}
+#plans .tabs .tab li:first-child {margin-left:0;}
+#plans .tabs .tab li.active {border-color: rgba(51, 51, 51, 0.2);color: #333333;}
+#plans .tabs .tab li:hover {background:rgba(0, 0, 0, 0.1);}
+#plans .tabs .tabText {position:relative;padding-top:10px;color: #828282;line-height: 21px;line-height: 150%;font-size: 16px;font-weight:400;min-height:150px;padding-bottom:15px;max-width:530px;}
+#plans .tabs .tabText > div {transition:ease all 300ms;position:absolute;display:none;top:20px;left:0;right:0;opacity:0;}
+#plans .tabs .tabText > div li:before {display:inline-block;content: "+";padding-right:5px;font-weight:bold;}
+
+#plans .tabs .tabText .mob {display:none;}
+#plans .tabs .tabText > div.active {display:block;opacity:1;position:relative;top:0;}
+#plans .tabs .tabText .desc {padding-bottom:15px;text-align:left;}
+
+#plans .but {display:inline-block;width:100%;max-width:230px;height:50px;line-height:50px;font-size:16px;	border-radius: 25px;}
+.plans-btn-wrap {display:block;width: 240px;float: left;margin-right: 10px;}
+.mob {display:none;}
+
+.slider .owl-carousel .owl-prev, .slider .owl-carousel .owl-next {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;cursor:pointer;position:absolute;z-index: 100;width:80px;top:0;bottom:0;text-align:center;}
+.slider .owl-carousel .owl-prev {left:0;}
+.slider .owl-carousel .owl-next {right:0;}
+.slider .owl-carousel .owl-prev img, .slider .owl-carousel .owl-next img {position:relative;top:50%;top:calc(50% - 17px);}
+.owl-theme .owl-dots {display: inline-block; position: absolute;bottom: 20px; left: 0; right: 0;}
+.owl-theme .owl-dots .owl-dot span {background: rgba(255, 255, 255, 0.1);border: 1px solid #828282;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span { background: #86B42C; border-color: #5c7d1a;}
+
+
+@media (max-width: 993px)
+{
+	.slider .owl-carousel .owl-prev, .slider .owl-carousel .owl-next {width:40px;}
+}
+
+@media (max-width: 577px)
+{
+	.desk {display:none;}
+	.mob {display:block;}
+	#plans .tabs .tabText .mob {display:block;}
+}
